@@ -1,0 +1,13 @@
+{% extends '_layouts/cp' %}
+
+{% set title = 'Forum'|t %}
+
+{% set tabs = {
+    general    : { label: "Default"|t, url: url('forum') },
+    threads    : { label: "Threads"|t, url: url('forum/threads') },
+    categories : { label: "Categories"|t, url: url('forum/categories') }
+} %}
+
+{% set content %}
+    <h1>Welcome to the Forum</h1>
+{% endset %}
